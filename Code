@@ -1,3 +1,13 @@
+library(randomForest)
+library(gmodels)
+library(neuralnet)
+library(RSNNS)
+library(Rcpp)
+library(lattice)
+library(ggplot2)
+library(caret)
+set.seed(123)
+
 setwd("E:/DATA SCIENCE/CV/Human Activity Recognition Using Smartphones Data Set/UCI HAR Dataset/UCI HAR Dataset/")
 train_data<-read.table("train/X_train.txt")
 train_lables<-read.table("train/Y_train.txt")
